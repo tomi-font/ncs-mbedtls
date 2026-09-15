@@ -1,0 +1,4 @@
+Bugfix
+   * Fix the build of the TLS library when PSA Crypto is provided by a
+     separate implementation rather than built in, where the legacy cipher
+     module that declares mbedtls_cipher_type_t is absent.
