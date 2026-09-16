@@ -1,0 +1,6 @@
+Bugfix
+   * Fix the build of the TLS library when psa/crypto_struct.h is replaced
+     through MBEDTLS_PSA_CRYPTO_STRUCT_FILE, where MBEDTLS_ECP_MAX_BYTES is
+     no longer reachable from mbedtls/ssl.h. This also gives the TLS 1.2
+     ECDHE premaster secret a usable size when elliptic-curve arithmetic is
+     fully provided by drivers and PSK key exchanges are disabled.
